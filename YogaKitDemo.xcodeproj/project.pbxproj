@@ -14,6 +14,9 @@
 		F15963301F1CAFA400A8BBFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F159632E1F1CAFA400A8BBFE /* Main.storyboard */; };
 		F15963321F1CAFA400A8BBFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15963311F1CAFA400A8BBFE /* Assets.xcassets */; };
 		F15963351F1CAFA400A8BBFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15963331F1CAFA400A8BBFE /* LaunchScreen.storyboard */; };
+		F159633D1F1DFF6500A8BBFE /* Shows.plist in Resources */ = {isa = PBXBuildFile; fileRef = F159633C1F1DFF6500A8BBFE /* Shows.plist */; };
+		F15963401F1DFFCD00A8BBFE /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = F159633F1F1DFFCD00A8BBFE /* Show.m */; };
+		F15963431F1F517000A8BBFE /* ShowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F15963421F1F517000A8BBFE /* ShowTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,11 @@
 		F15963311F1CAFA400A8BBFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F15963341F1CAFA400A8BBFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F15963361F1CAFA400A8BBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F159633C1F1DFF6500A8BBFE /* Shows.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Shows.plist; sourceTree = "<group>"; };
+		F159633E1F1DFFCD00A8BBFE /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
+		F159633F1F1DFFCD00A8BBFE /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = "<group>"; };
+		F15963411F1F517000A8BBFE /* ShowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowTableViewCell.h; sourceTree = "<group>"; };
+		F15963421F1F517000A8BBFE /* ShowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 		F15963241F1CAFA400A8BBFE /* YogaKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F159633C1F1DFF6500A8BBFE /* Shows.plist */,
 				F15963281F1CAFA400A8BBFE /* AppDelegate.h */,
 				F15963291F1CAFA400A8BBFE /* AppDelegate.m */,
 				F159632B1F1CAFA400A8BBFE /* ViewController.h */,
@@ -82,6 +91,10 @@
 				F15963331F1CAFA400A8BBFE /* LaunchScreen.storyboard */,
 				F15963361F1CAFA400A8BBFE /* Info.plist */,
 				F15963251F1CAFA400A8BBFE /* Supporting Files */,
+				F159633E1F1DFFCD00A8BBFE /* Show.h */,
+				F159633F1F1DFFCD00A8BBFE /* Show.m */,
+				F15963411F1F517000A8BBFE /* ShowTableViewCell.h */,
+				F15963421F1F517000A8BBFE /* ShowTableViewCell.m */,
 			);
 			path = YogaKitDemo;
 			sourceTree = "<group>";
@@ -166,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F15963351F1CAFA400A8BBFE /* LaunchScreen.storyboard in Resources */,
+				F159633D1F1DFF6500A8BBFE /* Shows.plist in Resources */,
 				F15963321F1CAFA400A8BBFE /* Assets.xcassets in Resources */,
 				F15963301F1CAFA400A8BBFE /* Main.storyboard in Resources */,
 			);
@@ -228,7 +242,9 @@
 			files = (
 				F159632D1F1CAFA400A8BBFE /* ViewController.m in Sources */,
 				F159632A1F1CAFA400A8BBFE /* AppDelegate.m in Sources */,
+				F15963401F1DFFCD00A8BBFE /* Show.m in Sources */,
 				F15963271F1CAFA400A8BBFE /* main.m in Sources */,
+				F15963431F1F517000A8BBFE /* ShowTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +370,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lizhao.YogaKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -367,6 +384,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lizhao.YogaKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -389,6 +407,7 @@
 				F159633B1F1CAFA400A8BBFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
